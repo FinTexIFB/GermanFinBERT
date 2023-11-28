@@ -16,7 +16,6 @@ This repository does not contain the codes for pre-training the BERT models, as 
 - Architecture: BERT base
 - Language: German
 - Specialization: Financial textual data
-- Original Model: [gbert-base model](https://huggingface.co/deepset/gbert-base) (deepset)
 - Framework: [MosaicML](https://github.com/mosaicml/examples/tree/main/examples/benchmarks/bert)
   
 ## Pre-training
