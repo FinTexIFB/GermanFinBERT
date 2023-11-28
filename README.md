@@ -53,7 +53,8 @@ Translated Financial Phrase Bank:
 - Accuracy: 95.41%
 - Macro F1: 91.49%
 
-The further pre-trained German FinBERT model demonstrated the following performances on finance-specific downstream tasks:
+  
+The pre-trained from scratch German FinBERT model demonstrated the following performances on finance-specific downstream tasks:
 
 Ad-Hoc Multi-Label Database:
 - Macro F1: 85.67%
