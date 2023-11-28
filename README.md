@@ -9,7 +9,7 @@ German FinBERT is a BERT language model focusing on the financial domain within 
 This repository does not contain the codes for pre-training the BERT models, as I use exactly teh codes of [MosaicML](https://github.com/mosaicml/examples/tree/main/examples/benchmarks/bert) for this purpose. Therefore, I only share the fine-tuning  scripts.
 
   
-##Overview
+## Overview
 
 - Author: Moritz Scherrmann
 - Paper: [here](https://arxiv.org/pdf/2311.08793.pdf)
@@ -18,7 +18,7 @@ This repository does not contain the codes for pre-training the BERT models, as 
 - Original Model: [gbert-base model](https://huggingface.co/deepset/gbert-base) (deepset)
 - Framework: [MosaicML](https://github.com/mosaicml/examples/tree/main/examples/benchmarks/bert)
   
-##Pre-training
+## Pre-training
 
 German FinBERT's pre-training corpus includes a diverse range of financial documents, such as Bundesanzeiger reports, Handelsblatt articles, MarketScreener data, and additional sources including FAZ, ad-hoc announcements, LexisNexis & Event Registry content, Zeit Online articles, Wikipedia entries, and Gabler Wirtschaftslexikon. In total, the corpus spans from 1996 to 2023, consisting of 12.15 million documents with 10.12 billion tokens over 53.19 GB.
 
@@ -28,8 +28,8 @@ I use the following pre-training set-ups:
 - Pre-training from scratch:
   With a batch size of 4096, I train the German FinBERT model for 174,000 steps, summing up to more than 17 epochs. I use an Adam optimizer with decoupled weight decay regularization, with Adam parameters 0.9, 0.98, 1e − 6, a weight decay of 1e − 5 and a maximal learning of 5e − 4. I train the model using a Nvidia DGX A100 node consisting of 8 A100 GPUs with 80 GB of memory each.  
 
-##Performance
-###Fine-tune Datasets
+## Performance
+### Fine-tune Datasets
 
 To fine-tune the model, I use several datasets, including:
 
@@ -37,7 +37,7 @@ To fine-tune the model, I use several datasets, including:
     An extractive question-answering dataset based on the SQuAD format, which was created using 3,044 ad-hoc announcements processed by OpenAI's ChatGPT to generate and answer questions (see [here]()).
     The financial phrase bank of Malo et al. (2013) for sentiment classification, translated to German using DeepL (see [here](https://huggingface.co/datasets/scherrmann/financial_phrasebank_75agree_german)).
 
-###Benchmark Results
+### Benchmark Results
 
 The further pre-trained German FinBERT model demonstrated the following performances on finance-specific downstream tasks:
 
@@ -70,7 +70,7 @@ Translated Financial Phrase Bank:
 - Accuracy: 95.95%
 - Macro F1: 92.70%
 
-##Authors
+## Author
 
 Moritz Scherrmann: scherrmann [at] lmu.de
 
