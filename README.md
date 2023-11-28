@@ -13,7 +13,8 @@ This repository does not contain the codes for pre-training the BERT models, as 
 
 - Author: Moritz Scherrmann
 - Paper: [here](https://arxiv.org/pdf/2311.08793.pdf)
-- Architecture: BERT base Language: German
+- Architecture: BERT base
+- Language: German
 - Specialization: Financial textual data
 - Original Model: [gbert-base model](https://huggingface.co/deepset/gbert-base) (deepset)
 - Framework: [MosaicML](https://github.com/mosaicml/examples/tree/main/examples/benchmarks/bert)
