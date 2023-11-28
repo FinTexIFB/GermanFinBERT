@@ -11,11 +11,14 @@ This repository does not contain the codes for pre-training the BERT models, as 
   
 ##Overview
 
-Author Moritz Scherrmann Paper: [here](https://arxiv.org/pdf/2311.08793.pdf)
-Architecture: BERT base Language: German
-Specialization: Financial textual data
-Original Model: gbert-base (deepset) Framework: [MosaicML](https://github.com/mosaicml/examples/tree/main/examples/benchmarks/bert)
-Pre-training
+- Author: Moritz Scherrmann
+- Paper: [here](https://arxiv.org/pdf/2311.08793.pdf)
+- Architecture: BERT base Language: German
+- Specialization: Financial textual data
+- Original Model: [gbert-base model](https://huggingface.co/deepset/gbert-base) (deepset)
+- Framework: [MosaicML](https://github.com/mosaicml/examples/tree/main/examples/benchmarks/bert)
+  
+##Pre-training
 
 German FinBERT's pre-training corpus includes a diverse range of financial documents, such as Bundesanzeiger reports, Handelsblatt articles, MarketScreener data, and additional sources including FAZ, ad-hoc announcements, LexisNexis & Event Registry content, Zeit Online articles, Wikipedia entries, and Gabler Wirtschaftslexikon. In total, the corpus spans from 1996 to 2023, consisting of 12.15 million documents with 10.12 billion tokens over 53.19 GB.
 
