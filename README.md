@@ -32,29 +32,25 @@ I use the following pre-training set-ups:
 ### Fine-tune Datasets
 
 To fine-tune the model, I use several datasets, including:
-
-    A manually labeled multi-label database of German ad-hoc announcements containing 31,771 sentences, each associated with up to 20 possible topics.
-    An extractive question-answering dataset based on the SQuAD format, which was created using 3,044 ad-hoc announcements processed by OpenAI's ChatGPT to generate and answer questions (see [here]()).
-    The financial phrase bank of Malo et al. (2013) for sentiment classification, translated to German using DeepL (see [here](https://huggingface.co/datasets/scherrmann/financial_phrasebank_75agree_german)).
+- A manually labeled multi-label database of German ad-hoc announcements containing 31,771 sentences, each associated with up to 20 possible topics.
+- An extractive question-answering dataset based on the SQuAD format, which was created using 3,044 ad-hoc announcements processed by OpenAI's ChatGPT to generate and answer questions (see [here]()).
+- The financial phrase bank of Malo et al. (2013) for sentiment classification, translated to German using DeepL (see [here](https://huggingface.co/datasets/scherrmann/financial_phrasebank_75agree_german)).
 
 ### Benchmark Results
 
 The further pre-trained German FinBERT model demonstrated the following performances on finance-specific downstream tasks:
 
 Ad-Hoc Multi-Label Database:
-
-    Macro F1: 86.08%
-    Micro F1: 85.65%
+- Macro F1: 86.08%
+- Micro F1: 85.65%
 
 Ad-Hoc QuAD (Question Answering):
-
-    Exact Match (EM): 52.50%
-    F1 Score: 74.61%
+- Exact Match (EM): 52.50%
+- F1 Score: 74.61%
 
 Translated Financial Phrase Bank:
-
-    Accuracy: 95.41%
-    Macro F1: 91.49%
+- Accuracy: 95.41%
+- Macro F1: 91.49%
 
 The further pre-trained German FinBERT model demonstrated the following performances on finance-specific downstream tasks:
 
