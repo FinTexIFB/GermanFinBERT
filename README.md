@@ -6,7 +6,7 @@ German FinBERT is a BERT language model focusing on the financial domain within 
 - Pre-trained from scratch version (SC):
   This version of German FinBERT is pre-trained from scratch on German finance specific textual data, starting with the Bert-base architecture and the vocabulary of the [bert-base-german-cased](https://huggingface.co/bert-base-german-cased) model of Deepset. The model can be found [here](https://huggingface.co/scherrmann/GermanFinBert_SC).
 
-This repository does not contain the codes for pre-training the BERT models, as I use exactly teh codes of [MosaicML](https://github.com/mosaicml/examples/tree/main/examples/benchmarks/bert) for this purpose. Therefore, I only share the fine-tuning  scripts.
+This repository does not contain the codes for pre-training the BERT models, as I use exactly the codes of [MosaicML](https://github.com/mosaicml/examples/tree/main/examples/benchmarks/bert) for Huggingface models for this purpose. Therefore, I only share the fine-tuning  scripts.
 
   
 ## Overview
